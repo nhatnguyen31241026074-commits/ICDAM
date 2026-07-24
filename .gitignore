@@ -1,22 +1,24 @@
-# Bỏ qua file môi trường ảo (Nặng, không cần thiết)
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Bỏ qua file bảo mật (QUAN TRỌNG NHẤT)
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Env / secrets
 .env
 *.key
-*.pem
+serviceAccountKey.json
 
-# Bỏ qua các file rác của Python
-__pycache__/
-*.pyc
-.pytest_cache/
-
-# Bỏ qua file log hoặc database tạm
-*.log
-*.sqlite3
-
-# Bỏ qua các file IDE
-.vscode/
+# OS / IDE
+.DS_Store
 .idea/
+.vscode/
+
+# Run outputs (keep the dir, ignore bulky artifacts if desired)
+# results/*.csv
